@@ -1,0 +1,14 @@
+# Ignore datasets
+*.csv
+
+# Ignore models
+*.keras
+*.h5
+*.pkl
+
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+.vscode/
+training_metrics.png
