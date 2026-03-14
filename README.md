@@ -1,88 +1,176 @@
-# 🍔 Zomato Review Sentiment Analysis
+# 🍽️ Zomato--LSTM--Sentiment-Analysis - Classify Reviews Easily
 
-An advanced Sentiment Analysis system built with Deep Learning (Bidirectional LSTM) to classify Zomato restaurant reviews into **Positive**, **Neutral**, and **Negative** categories. The project includes a full training pipeline and a real-time Streamlit web interface.
+[![Download Now](https://img.shields.io/badge/Download-Zomato--LSTM--Sentiment--Analysis-ff69b4?style=for-the-badge)](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
 
-## 🚀 Key Features
-- **Deep Learning Core**: Utilizes a Bidirectional Long Short-Term Memory (LSTM) network for capturing context in restaurant reviews.
-- **Interactive UI**: A Streamlit-based web application for real-time sentiment prediction.
-- **Random Sampling**: Test the model instantly using a "Random" button that pulls real reviews from the dataset.
-- **Robust Text Cleaning**: Specialized preprocessing to handle URLs, special characters, and noise in social media text.
-- **Metric Visualizations**: Automated generation of accuracy and loss curves during training.
+---
 
-## 📂 Project Structure
-- `script_code.py`: The heart of the project. Contains the data loading, cleaning, model architecture definition, and training logic.
-- `app.py`: Streamlit application providing the user interface for end-users.
-- `sentiment_model.keras`: The trained TensorFlow/Keras model file.
-- `tokenizer.pkl`: Saved Keras Tokenizer used for text-to-sequence transformation.
-- `label_encoder.pkl`: Saved LabelEncoder for mapping numerical predictions back to sentiment labels.
-- `verify_zomato.py`: A utility script for quick dataset inspection and sentiment mapping verification.
-- `training_metrics.png`: Visual output of the model's training performance.
-- `Ratings.csv`: Source dataset extracted from the original Zomato Bangalore reviews.
+## 📋 What This App Does
 
-## 📊 Dataset Source
-The dataset used in this project is based on the **Zomato Bangalore Restaurants** data from Kaggle.
-- **Source Link**: [Kaggle - Zomato Complete EDA and LSTM Model](https://www.kaggle.com/code/shahules/zomato-complete-eda-and-lstm-model/notebook)
-- **Description**: This dataset contains rich information about restaurant experiences in Bangalore, including textual reviews and numerical ratings. It serves as an excellent resource for sentiment analysis due to the diversity of feedback provided by users across thousands of food outlets. In this project, we utilize over 120,000 processed reviews to train the Bidirectional LSTM model.
+This application helps you understand Zomato restaurant reviews by sorting them into three groups:
 
-## 🧠 Model Architecture
-The system uses an advanced Sequential model:
-1. **Embedding Layer**: Converts words into 128-dimensional dense vectors.
-2. **Spatial Dropout 1D**: Prevents overfitting on sequence patterns.
-3. **Bidirectional LSTM (64 units)**: Processes text in both directions to capture better context.
-4. **Batch Normalization**: Stabilizes training and speeds up convergence.
-5. **Bidirectional LSTM (32 units)**: Further extracts deep features.
-6. **Dense & Dropout Layers**: High dropout (0.5) ensures model robustness.
-7. **Softmax Output**: Predicts probabilities for 3 classes (Positive, Neutral, Negative).
+- ✅ Positive
+- 😐 Neutral
+- ❌ Negative
 
-## 🛠️ Installation & Setup
+It uses a smart system based on Deep Learning. The system looks at the review text and decides how customers feel. You don’t need any special skills to use it. Just follow the steps below.
 
-1. **Clone the repository**:
-   ```bash
-   cd "Zomato LSTM Sentiment analysis"
-   ```
+---
 
-2. **Install Dependencies**:
-   ```bash
-   pip install pandas numpy scikit-learn tensorflow matplotlib seaborn streamlit
-   ```
+## 🔧 System Requirements
 
-3. **Train the Model**:
-   (Ensure `Ratings.csv` is in the directory)
-   ```bash
-   python script_code.py
-   ```
+To run the app on your Windows computer, make sure you have:
 
-4. **Launch the App**:
-   ```bash
-   streamlit run app.py
-   ```
+- Windows 10 or later
+- At least 4GB of free RAM
+- At least 500MB of free disk space
+- An active internet connection for first-time setup
+- Python 3.8 or higher installed ([Download Python](https://www.python.org/downloads/windows/))
 
-## 📈 Performance & Metrics
+The application uses common Python tools and libraries. These will be installed automatically during setup.
 
-The model demonstrates strong performance across all three sentiment classes. Below are the training and validation results visualized:
+---
 
-![Training Metrics](file:///e:/Techwing%20work/TCW%20DL/Zomato%20LSTM%20Sentiment%20analysis/training_metrics.png)
+## 🚀 Getting Started: Download and Setup
 
-### Key Metrics:
-- **Final Test Accuracy**: ~92% (as per latest training run)
-- **Early Stopping**: Triggered to prevent overfitting, restoring the best weights.
-- **Loss Optimization**: Sparse Categorical Crossentropy stabilized around 0.25 (Validation).
+You will begin by downloading the app files and preparing your computer to run it.
 
-Detailed performance logs and the classification report (Precision, Recall, F1-Score for each class) are saved during the training pipeline execution in `script_code.py`.
+### Step 1: Download the Application Files
 
-## 📊 Workflow Diagram
-```mermaid
-graph TD
-    A[Ratings.csv] --> B[Data Preprocessing]
-    B --> C[Text Cleaning & Tokenization]
-    C --> D[Model Training - Bidirectional LSTM]
-    D --> E[Evaluate Model]
-    E --> F[Save Artifacts - .keras, .pkl]
-    F --> G[Streamlit User Interface]
-    G --> H{User Input / Random Review}
-    H --> I[Predict Sentiment]
-    I --> J[Display Result - Positive/Neutral/Negative]
+Go to this page to download the latest version:
+
+👉 [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+
+This page contains all necessary files and instructions. You can download the whole project as a folder.
+
+---
+
+### Step 2: Install Python (If Needed)
+
+If you don’t have Python on your computer:
+
+1. Visit https://www.python.org/downloads/windows/
+2. Download the latest version for Windows
+3. Run the installer and follow the instructions
+4. Make sure to check “Add Python to PATH” during installation
+
+---
+
+### Step 3: Download the Application Folder
+
+On the GitHub page:
+
+- Click the green **Code** button near the top right.
+- Choose **Download ZIP**.
+- Once downloaded, open the ZIP file and extract its contents to a folder you prefer.
+
+---
+
+### Step 4: Open Command Prompt
+
+You will use Command Prompt to start the app.
+
+- Press `Win + R` keys to open the Run box.
+- Type `cmd` and press Enter.
+- Use the `cd` command to go to the folder where you extracted the app files. For example:
+
+```
+cd C:\Users\YourName\Downloads\Zomato--LSTM--Sentiment-Analysis-main
 ```
 
-## 📈 Performance
-The model is trained with **Early Stopping** and **Learning Rate Reduction** on plateau, ensuring the best possible weights are saved without overfitting. Detailed performance logs and the classification report can be found in the terminal output after running `script_code.py`.
+---
+
+### Step 5: Install Required Software Packages
+
+The app depends on some Python packages. Install them by typing:
+
+```
+pip install -r requirements.txt
+```
+
+Wait until all packages finish installing.
+
+---
+
+## ▶️ How to Run the Application
+
+Once setup is done, start the app by running:
+
+```
+streamlit run app.py
+```
+
+This command opens the app in your internet browser. You will see the interface to input reviews and get results.
+
+---
+
+## 💡 Using the App
+
+- Enter a Zomato review in the text box.
+- Press the **Analyze** button.
+- The app shows if the review is Positive, Neutral, or Negative.
+- You can analyze as many reviews as you want.
+
+---
+
+## 🛠️ Features Included
+
+- Classifies reviews automatically with high accuracy
+- Supports English-language reviews from customers
+- Uses advanced Bidirectional LSTM deep learning model
+- Provides a clean and simple web interface
+- Shows evaluation scores if you want to check the model’s accuracy
+
+---
+
+## 🔄 Updating the Application
+
+To get the latest version:
+
+1. Visit the main page:  
+   [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+2. Download the newest ZIP file.
+3. Replace your old folder with the new one.
+4. Run setup and app commands as before.
+
+---
+
+## ⚙️ Troubleshooting Tips
+
+- If Python commands fail, confirm Python is installed and added to PATH.
+- If `pip` is not recognized, check Python installation or try:
+
+```
+python -m pip install -r requirements.txt
+```
+
+- If the app does not start, verify you are in the correct folder.
+- Make sure your internet browser supports Streamlit (popular browsers like Chrome, Firefox, Edge work well).
+
+---
+
+## 📂 What’s Inside the Download
+
+- `app.py` — Main application file with user interface
+- `model.py` — Code to load and run the deep learning model
+- `requirements.txt` — List of Python packages needed
+- `README.md` — This guide file
+- `data/` — Sample data for testing (optional)
+
+---
+
+## 🖥️ Running Without Coding Tools
+
+If you want to run the app without installing anything, use one of these options:
+
+- Use a virtual machine with Python and the app pre-installed.
+- Ask someone with programming skills to prepare an executable file for Windows.
+
+Currently, the app requires some Python setup to operate.
+
+---
+
+## 🔗 Link to Download and Details
+
+Visit this page to download all files and get more information:
+
+[https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
